@@ -1,31 +1,5 @@
-// ignore_for_file: constant_identifier_names
-
+import 'package:solidity_error/constants.dart';
 import 'package:web3dart/web3dart.dart';
-
-enum ErrorType {
-  AddressZero,
-  AlreadyCommitted,
-  CodeExpired,
-  CommitmentInactive,
-  CommitmentInvalid,
-  DirectEthTransferNotAllowed,
-  FunctionDoesNotExist,
-  Insufficient,
-  NoCommitmentFound,
-  ReferralCodeInvalid,
-  RevealNotAllowed,
-  SignatureInvalid,
-  TokenExist,
-  WalletStatus,
-  Unknown,
-}
-
-enum DataType {
-  address,
-  bool,
-  uint256,
-  bytes32,
-}
 
 class ErrorDecoder {
   // Map error signatures to their names and parameter types
